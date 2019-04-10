@@ -20,19 +20,10 @@ function RobotDancer(){
 }
 
 RobotCooker.prototype = Object.create(Robot.prototype);
-RobotCooker.prototype.work = function(){
-  Robot.prototype.work.apply(this);
-}
 
 RobotDancer.prototype = Object.create(Robot.prototype);
-RobotDancer.prototype.work = function(){
-  Robot.prototype.work.apply(this);
-}
 
 CoffeRobot.prototype = Object.create(Robot.prototype);
-CoffeRobot.prototype.work = function(){
-  Robot.prototype.work.apply(this);
-}
 
 var cooker = new RobotCooker();
 var dancer = new RobotDancer();
